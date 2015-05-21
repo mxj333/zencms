@@ -81,7 +81,7 @@ class TempBook extends AppModel {
     public function getJdSaveBooks($data) {
 //        pr($data);exit;
         $save_image_directory = WWW_ROOT.'images'.DS.date("Y").DS.date("m").DS.date("d");
-        $save_image_url = DS.'images'.DS.date("Y").DS.date("m").DS.date("d");
+        $save_image_url = DS.'images'.DS.date("Ymd");
         mkpath($save_image_directory);
         $sql = 'TRUNCATE temp_books';
         $this->query($sql);
