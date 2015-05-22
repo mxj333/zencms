@@ -80,8 +80,8 @@ class TempBook extends AppModel {
 
     public function getJdSaveBooks($data) {
 //        pr($data);exit;
-        $save_image_directory = WWW_ROOT.'images'.DS.date("Y").DS.date("m").DS.date("d");
-        $save_image_url = DS.'images'.DS.date("Ymd");
+        $save_image_directory = WWW_ROOT.'uploads'.DS.date("Ymd");
+        $save_image_url = DS.'uploads'.DS.date("Ymd");
         mkpath($save_image_directory);
         $sql = 'TRUNCATE temp_books';
         $this->query($sql);
@@ -100,24 +100,18 @@ class TempBook extends AppModel {
                 echo "\n"; 
             }
 
-            $data['category_id'] = $data['category_id'];
-            $data['cid'] = 1;
+            $tempbook[$k]['category_id'] = $data['category_id'];
+            $tempbook[$k]['cid'] = 1;
 
-            $data['thumbnail'] = $save_image_url.DS.$image_path; 
-            $data['name'] = $val['name'];
-            $data['wareid'] = $val['wareid'];
-
-//            $n_arr = $this->find('first',array(
-//                                    'conditions'=>array('name >'=>$val['name']),
-//                                    'order' =>'id asc',
-//                                    'recursive'=>-1));
-//            if(!$n_arr){
-                $this->create();
-                $rtl = $this->save($data);
-//            }
-            
+            $tempbook[$k]['thumbnail'] = $save_image_url.DS.$image_path; 
+            $tempbook[$k]['name'] = $val['name'];
+            $tempbook[$k]['wareid'] = $val['wareid'];
+           
         }
-
+         $this->create();
+         $rtl = $this->saveMany($tempbook);
+//        pr($tempbook);
+        exit;
         return $rtl;
     }
     

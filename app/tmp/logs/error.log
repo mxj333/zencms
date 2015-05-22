@@ -5295,3 +5295,12 @@ Stack Trace:
 #8 /home/mxj/DEV/zencms/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CollectionsController), Object(CakeRequest))
 #9 /home/mxj/DEV/zencms/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2015-05-21 22:22:17 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => 'Acl',
+)
+Request URL: /acl/users/login
+Stack Trace:
+#0 /home/mxj/DEV/zencms/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

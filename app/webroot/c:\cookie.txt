@@ -5,8 +5,8 @@
 m.jd.com	FALSE	/category/	FALSE	0	JAMCookie	true
 .m.jd.com	TRUE	/	FALSE	1492962391	abtest	20150424234631827_69
 .jd.com	TRUE	/	FALSE	1432482391	mobilev	html5
-.m.jd.com	TRUE	/	FALSE	1434605060	USER_FLAG_CHECK	a06b48d865143f497ecabc3cd40b7e27
-.jd.com	TRUE	/	FALSE	0	sid	e292302c138bc41bb105e5e1941254ae
+.m.jd.com	TRUE	/	FALSE	1434791473	USER_FLAG_CHECK	162bfdba1228d47fa2359fc65529f8c6
+.jd.com	TRUE	/	FALSE	0	sid	00c1693fc85ac9cd2baf9f891c43e4e4
 m.jd.com	FALSE	/products/	FALSE	0	JAMCookie	true
 m.jd.com	FALSE	/ware/	FALSE	0	JAMCookie	true
 item.m.jd.com	FALSE	/product/	FALSE	0	JAMCookie	true
