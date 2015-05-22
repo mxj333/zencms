@@ -88,7 +88,7 @@ class AppController extends Controller {
 //		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
 //		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
 //	);
-//               public $theme = "Cakestrap";
+               public $theme = "Cakestrap";
 
 //public $helpers = array(
 //                         'CakeStrap' => array('className' => 'CakeStrapHtml'),
